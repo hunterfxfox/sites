@@ -6,17 +6,35 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title> Base do Sistema</title>
 	<link rel="stylesheet" href="">
+
 </head>
 <body>
 	<nav id="menu">
 		<input type="checkbox" id="equiv" />
-		<ul>
+		<label for="equiv"> &equiv; </label>
+
+		<ul class="subMenuNivel1">
 			<li> <a href="index.html"> Início </a> </li>
-			<li> Pedagógico  </li>
-			<li> Telemarketing </li>
+			<li>
+				<input type="checkbox" class="subitem" id="item1">
+				<label for="item1"> Pedagógico </label> 
+				  
+				<ul class="subMenuNivel2">
+					<li><a href=""> Estátisticas Pedagógicas </a></li>
+					<li><a href=""> Diário de Classe </a></li>
+					<li><a href=""> Aulas Avulsas </a></li>
+					<li><a href=""> Mapa de Turmas </a></li>
+
+
+				</ul>
+			</li>			
+			<li> 
+				<input type="checkbox" class="subitem" id="item2">
+				<label for="item2"> Telemarketing </label>
+			</li>
 			<li> Direção </li>
 			<li> Administração </li>
-			<li> Vendas </li>
+			<li> Vendas </li> 
 		</ul>
 	</nav>
 </body>
